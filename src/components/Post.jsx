@@ -79,7 +79,7 @@ const ContainerPost = styled.div`
   }
 
   .fundo .acoes div:first-child ion-icon {
-    margin-right: 6px;
+    margin-right: 12px;
   }
 
   .fundo .curtidas {
