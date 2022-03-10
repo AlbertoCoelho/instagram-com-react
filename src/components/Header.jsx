@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import Input from './Input';
-import ContainerIcones from './Icones';
-import InstagramLogo from '.././assets/img/logo.png';
+import Icones from './Icones';
 
 
+//Possa ser que tenha que refatorar como o Navbar está organizado no styled components pra fazer o responsivo
 const Header = () => {
   return (
   <>
@@ -12,16 +12,16 @@ const Header = () => {
         <Logo>
           <ion-icon name="logo-instagram"></ion-icon>
           <Separador />
-          <img src={InstagramLogo} alt="logo" />
+          <img src=".././assets/img/logo.png" alt="logo" />
         </Logo>
         <LogoMobile>
           <ion-icon name="logo-instagram"></ion-icon>
         </LogoMobile>
         <InstagramMobile>
-        <img src={InstagramLogo} alt="logo" />
+        <img src=".././assets/img/logo.png" alt="logo" />
         </InstagramMobile>
         <Input type="text" placeholder="Pesquisar" />
-        <ContainerIcones />  
+        <Icones />  
         <IconesMobile>
           <ion-icon name="paper-plane-outline"></ion-icon>
         </IconesMobile>

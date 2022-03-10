@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ContainerIcones = () => {
+const Icones = () => {
   const ionicons = [
     {nome: "paper-plane-outline"},
     {nome: "compass-outline"},
@@ -9,20 +9,20 @@ const ContainerIcones = () => {
   ];
 
   return (
-    <Icones>
+    <ContainerIcones>
       {
         ionicons.map( (item) => (
           <ion-icon key={item.nome} name={item.nome}></ion-icon>
         ) )
       }
-    </Icones>
+    </ContainerIcones>
   );
 }
 
-const Icones = styled.div`
+const ContainerIcones = styled.div`
   ion-icon{
     margin: 0 5px;
   }
 `
 
-export default ContainerIcones;
+export default Icones;
