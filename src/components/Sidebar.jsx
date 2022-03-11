@@ -44,6 +44,10 @@ const ContainerSideBar = styled.div`
   top: 88px;
   width: 293px;
 
+  @media (max-width:935px) {
+    display: none;
+  }
+
   > .usuario {
     display: flex;
     align-items: center;
@@ -99,24 +103,5 @@ const ContainerSideBar = styled.div`
     margin-top: 18px;
   }
 `
-
-// const Sugestoes = styled.div`
-//   .titulo {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 20px 0 14px;
-//   }
-
-//   img {
-//     width: 32px;
-//     height: 32px;
-//   }
-
-//   .seguir {
-//     color: #139EF2;
-//     font-weight: 600;
-//   }
-// `
 
 export default Sidebar;

@@ -23,6 +23,12 @@ const ContainerIcones = styled.div`
   ion-icon{
     margin: 0 5px;
   }
+
+  @media (max-width: 614px) {
+    ion-icon{
+      display: none;
+    }
+  }
 `
 
 export default Icones;

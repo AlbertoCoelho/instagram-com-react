@@ -44,6 +44,21 @@ const ContainerPost = styled.div`
   flex-direction: column;
   margin-top: 18px;
 
+  @media (max-width:614px) {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 72px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
   .topo {
     display: flex;
     justify-content: space-between;
@@ -52,7 +67,7 @@ const ContainerPost = styled.div`
     font-weight: 500;
   }
 
-  .topo .usuario, .post .topo .acoes {
+  .topo .usuario, .topo .acoes {
     display: flex;
     align-items: center;
   }

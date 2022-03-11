@@ -18,9 +18,11 @@ const Header = () => {
           <ion-icon name="logo-instagram"></ion-icon>
         </LogoMobile>
         <InstagramMobile>
-        <img src=".././assets/img/logo.png" alt="logo" />
+          <img src=".././assets/img/logo.png" alt="logo" />
         </InstagramMobile>
-        <Input type="text" placeholder="Pesquisar" />
+        <div className="pesquisa">
+          <Input type="text" placeholder="Pesquisar" />
+        </div>
         <Icones />  
         <IconesMobile>
           <ion-icon name="paper-plane-outline"></ion-icon>
@@ -44,6 +46,12 @@ const Navbar = styled.div`
   left: 0;
   z-index: 2;
 
+  @media (max-width: 614px) {
+    .pesquisa {
+      display: none;
+    }
+  }
+
   ion-icon, img {
     cursor: pointer;
   }
@@ -57,6 +65,10 @@ const Container = styled.div`
   align-items: center;
   height: 100%;
 
+  @media (max-width:935px) {
+    padding: 0 20px;
+  }
+
   > * {
   display: flex;
   align-items: center;
@@ -67,6 +79,10 @@ const Logo = styled.div`
   img {
     position: relative;
     top: 3px;
+  }
+
+  @media (max-width: 614px) {
+    display: none;
   }
 `
 
@@ -79,12 +95,26 @@ const Separador = styled.div`
 
 const LogoMobile = styled.div`
   display: none !important;
+
+  @media (max-width: 614px) {
+    display: flex !important;
+  }
 `
 
 const InstagramMobile = styled.div`
   display: none !important;
+
+  @media (max-width: 614px) {
+    position: relative;
+    top: 4px;
+    display: flex !important;
+  }
 `
 const IconesMobile = styled.div`
   display: none;
+
+  @media (max-width: 614px) {
+    display: flex;
+  }
 `
 export default Header;

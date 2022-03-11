@@ -37,6 +37,12 @@ const ContainerStories = styled.div`
   overflow: hidden;
   position: relative;
 
+  @media (max-width: 614px) {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+  }
+
   .setinha{
     position: absolute;
     right: 10px;

@@ -24,6 +24,15 @@ const ContainerCorpo = styled.div`
   width: 935px;
   margin: 0 auto;
   margin-top: 88px;
+
+  @media (max-width:935px) {
+    justify-content: center;
+    width: 100%;
+  }
+
+  @media (max-width:614px) {
+    margin-top: 0;
+  }
 `
 const Esquerda = styled.div`
   width: 100%;
