@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Stories from "./Stories";
 import Posts from "./Posts";
+import Sidebar from "./Sidebar";
 
 
 const Corpo = () => {
@@ -10,6 +11,7 @@ const Corpo = () => {
         <Stories />
         <Posts />
       </Esquerda>
+      <Sidebar />
     </ContainerCorpo>
   );
 }
