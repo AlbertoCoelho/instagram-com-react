@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import Input from './Input';
 import Icones from './Icones';
 
-
-//Possa ser que tenha que refatorar como o Navbar está organizado no styled components pra fazer o responsivo
 const Header = () => {
   return (
   <>
