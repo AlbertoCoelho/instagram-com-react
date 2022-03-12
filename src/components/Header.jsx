@@ -65,15 +65,22 @@ const Container = styled.div`
   align-items: center;
   height: 100%;
 
+  
+  > * {
+    display: flex;
+    align-items: center;
+  }
+  
   @media (max-width:935px) {
     padding: 0 20px;
   }
 
-  > * {
-  display: flex;
-  align-items: center;
+  @media (max-width:614px){
+    > * {
+      display: none;
+    }
   }
-`
+  `
 
 const Logo = styled.div`
   img {

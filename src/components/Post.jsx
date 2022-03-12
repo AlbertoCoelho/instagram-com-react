@@ -44,21 +44,6 @@ const ContainerPost = styled.div`
   flex-direction: column;
   margin-top: 18px;
 
-  @media (max-width:614px) {
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-
-    &:last-child {
-      margin-bottom: 72px;
-    }
-
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-
   .topo {
     display: flex;
     justify-content: space-between;
@@ -112,6 +97,21 @@ const ContainerPost = styled.div`
 
   &:last-child {
     margin-bottom: 18px;
+  }
+
+  @media (max-width:614px) {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+    
+    &:last-child {
+      margin-bottom: 72px;
+    }
   }
 `
 
