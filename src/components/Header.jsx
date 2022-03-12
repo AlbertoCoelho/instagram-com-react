@@ -46,14 +46,14 @@ const Navbar = styled.div`
   left: 0;
   z-index: 2;
 
+  ion-icon, img {
+    cursor: pointer;
+  }
+
   @media (max-width: 614px) {
     .pesquisa {
       display: none;
     }
-  }
-
-  ion-icon, img {
-    cursor: pointer;
   }
 `
 

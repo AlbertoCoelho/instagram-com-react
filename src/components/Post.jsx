@@ -63,7 +63,7 @@ const ContainerPost = styled.div`
     margin-right: 10px;
   }
 
-  .usuario, .post .topo img, .post .fundo img, .post ion-icon, .post strong {
+  .usuario, .topo img, .fundo img, ion-icon, strong {
     cursor: pointer;
   }
 

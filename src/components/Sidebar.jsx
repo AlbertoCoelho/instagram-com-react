@@ -44,10 +44,6 @@ const ContainerSideBar = styled.div`
   top: 88px;
   width: 293px;
 
-  @media (max-width:935px) {
-    display: none;
-  }
-
   > .usuario {
     display: flex;
     align-items: center;
@@ -101,6 +97,10 @@ const ContainerSideBar = styled.div`
 
   .copyright {
     margin-top: 18px;
+  }
+
+  @media (max-width:935px) {
+    display: none;
   }
 `
 
